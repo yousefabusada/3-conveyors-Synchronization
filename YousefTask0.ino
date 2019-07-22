@@ -13,22 +13,22 @@ const uni32_t kDelay= 10; // 100 Hz
 int HALF(){
   while(1){
     kDelay= setSpeedMotor/2
-    pinMode(kPin, true);
+    pinMode(kPin, HIGH);
     digitalWrite(kPin, HalfSpeed);
     delay(kDelay);
-    pinMode(kPin, false);
+    pinMode(kPin, LOW);
     delay(kDelay);
-    pinMode(kPin, true);
+    pinMode(kPin, HIGH);
     digitalWrite(kPin, HalfSpeed);
     delay(kDelay);
-    pinMode(kPin, false);
+    pinMode(kPin, LOW);
     delay(kDelay);
     
   }
 }
 int MAX(inputPin){
   while(1){
-    kDelay= setSpeedMotor
+    kDelay= setSpeedMotor;
     pinMode(inputPin, HIGH);
     digitalWrite(kPin, HalfSpeed);
     delay(kDelay);
